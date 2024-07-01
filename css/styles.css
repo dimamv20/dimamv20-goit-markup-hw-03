@@ -51,7 +51,7 @@ ul{
 
 .container{
     width: 1158px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 15px;
 }
 .link-nav{
@@ -75,6 +75,16 @@ ul{
 
 address{
     font-style: normal;
+}
+.address-contact{
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+
+}
+
+.address-contact li:last-child{
+    margin-right: 0;
 }
 .address-class-header{
     font-size: normal;
@@ -194,7 +204,7 @@ button:active, button:focus, link:active,link:focus{
 }
 
 .list-of-plus{
-    width: calc((100% - 72px) / 4); 
+    width: calc((100% - 72px) / 4);
 }
 .third-page{
     background-color: #F4F4FD;
@@ -202,6 +212,7 @@ button:active, button:focus, link:active,link:focus{
 }
 .third-page-card{
     background-color: #FFFFFF;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .third-page-head{
     font-size: 36px;
@@ -228,7 +239,7 @@ button:active, button:focus, link:active,link:focus{
 }
 
 .card{
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
 
 }
