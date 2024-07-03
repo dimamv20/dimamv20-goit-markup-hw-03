@@ -1,375 +1,234 @@
-body{
-    font-family: "Roboto", sans-serif; 
-    color: #434455;
-    background-color: #FFFFFF;
-    font-weight: 100,400,500,700;
-}
-img{
-    display: block;
-}
-a{
-    text-decoration: none;
-}
-.logo{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color:#4d5ae5;
-
-}
-ul{
-    list-style: none;
-    margin:0;
-    padding: 0;
-}
-.logo-d{
-    margin-right: 76px;
-}
-.span-logo{
-    color:#2e2f42;
-}
-.header-class{
-    border-bottom:1px solid #e7e9fc;
-}
-.header-container{
-    display: flex;
-    align-items: center;
-}
-.nav-class{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
-    display: flex;
-    gap: 40px;
-
-}
-
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    margin-left: auto;
-}
-
-.menu li:last-child {
-    margin-right: 0;
-}
-
-
-.container{
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.link-nav{
-    font-weight:500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    display: block;
-
-  }
-
-.menu-option{
-    padding: 24px 0;
-}
-.link-nav:hover{
-    color: #404bbf;
-  } 
-.link-nav:focus{
-    color: #404BBF;
-  }
-
-address{
-    font-style: normal;
-}
-.address-contact{
-    display: flex;
-    gap: 40px;
-    margin-right: 40px;
-    margin-left: auto;
-
-}
-
-.address-contact li:last-child{
-    margin-right: 0;
-}
-.address-class-header{
-    font-size: normal;
-    margin-left: auto;
-}
-.contact-address{
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.contact-address:hover{
-    color:#404bbf;
-}
-.contact-address:focus{
-    color:#404bbf;
-}
-button{
-    background-color: rgba(77, 90, 229, 1);
-    cursor: pointer;
-}
-
-button:active, button:focus, link:active,link:focus{
-    background-color: rgba(64, 75, 191, 1);
-}
-.first-page{
-    background-color:#2e2f42;
-    padding: 188px 0;
-
-}
-.first-page-head{
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 0.02em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
-    
-
-}
-.first-page-head-d{
-    max-width: 496px;
-
-}
-.order-button{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    background-color: #4D5AE5;
-    cursor: pointer;
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: 48px;
-}
-
-.order-button-d{
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    background-color: #4d5ae5;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.order-button:hover{
-    background-color: #404BBF;
-}
-
-.order-button:focus{
-    background-color: #404BBF;
-    
-}
-.second-page{
-    padding: 120px 0;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
+  </head>
+  <body>
+    <header class="header-class">
+      <div class="header-container container">
+          <nav class="nav-class">
+            <a href="./index.html" class="logo logo-d"
+              >Web<span class="span-logo">Studio</span></a
+            >
+            <ul class="menu">
+              <li>
+                <a href="./index.html" class="link-nav menu-option">Studio</a>
+              </li>
+              <li><a href="" class="link-nav menu-option">Portfolio</a></li>
+              <li><a href="" class="link-nav menu-option">Contacts</a></li>
+            </ul>
+          </nav>
+        <address class="address-class-header">
+          <ul class="address-contact">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-address"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="contact-address"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="first-page">
+        <div class="container-first-page container">
+          <h1 class="first-page-head first-page-head-d">
+            Effective Solutions for Your Business
+          </h1>
+          <button type="button" class="order-button order-button-d">
+            Order Service
+          </button>
+        </div>
+      </section>
 
 
-}
+      
+      <section class="second-page">
+        <div class="second-page-container container">
+          <h2 class="visually-hidden">Our Plusus</h2>
+          <ul class="list-info-second-page">
+            <li class="list-of-plus">
+              <h3 class="second-page-lists-head list-head">Strategy</h3>
+              <p class="paragragh-second-page">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="list-of-plus">
+              <h3 class="second-page-lists-head list-head">Punctuality</h3>
+              <p class="paragragh-second-page">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="list-of-plus">
+              <h3 class="second-page-lists-head list-head">Diligence</h3>
+              <p class="paragragh-second-page">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="list-of-plus">
+              <h3 class="second-page-lists-head list-head">Technologies</h3>
+              <p class="paragragh-second-page">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+      <section class="third-page">
+        <div class="third-page-container container">
+          <h2 class="third-page-head third-page-head-d">Our Team</h2>
+          <ul class="card-of-employee">
+            <li class="third-page-card card">
+             
+                <img src="./images/Our-Team/1.jpg" alt="Mark" width="264" />
+                <div class="card-container">
+                  <h3 class="f-l-name-class f-l-name-class-d">Mark Guerrero</h3>
+                  <p class="p_project">Product Designer</p>
+                </div>
+            </li>
+            <li class="third-page-card card">
+                <img src="./images/Our-Team/2.jpg" alt="Tom" width="264" />
+                  <div class="card-container">
+                    <h3 class="f-l-name-class f-l-name-class-d">Tom Ford</h3>
+                    <p class="p_project">Frontend Developer</p>
+                  </div>
+            </li>
+            <li class="third-page-card card">
+                <img src="./images/Our-Team/3.jpg" alt="Camila" width="264" />
+                <div class="card-container">
+                  <h3 class="f-l-name-class f-l-name-class-d">Camila Garcia</h3>
+                  <p class="p_project">Marketing</p>
+                </div>
+            </li>
+            <li class="third-page-card card">
+                <img src="./images/Our-Team/4.jpg" alt="Daniel" width="264" />
+                <div class="card-container">
+                  <h3 class="f-l-name-class f-l-name-class-d">Daniel Wilson</h3>
+                  <p class="p_project">UI Designer</p>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="quarter-page">
+        <div class="quarter-page-container container">
+          <h2 class="quarter-page-head q-p-h">Our Portfolio</h2>
+            <ul class="quarter-page-content">
+              <li class="quarter-card">
 
-.list-info-second-page{
-    display: flex;
-    gap: 24px;
-    margin-right: 24px;
-}
+                  <img
+                    src="./images/Our-Portfolio/1.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                  <div class="quarter-content-card">
+                    <h3 class="qurter-page-list-head">Banking App</h3>
+                    <p class="quarter-page-paragraph">App</p>
+                  </div>
+              </li>
+              <li class="quarter-card">
 
-.list-info-second-page li:last-child{
-    margin-right: 0;
-}
+                  <img
+                    src="./images/Our-Portfolio/2.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                  <div class="quarter-content-card">
+                    <h3 class="qurter-page-list-head">Cashless Payment</h3>
+                    <p class="quarter-page-paragraph">Marketing</p>
+                  </div>
+              </li>
+              <li class="quarter-card">
 
+                  <img
+                    src="./images/Our-Portfolio/3.jpg"
+                    alt="Meditaion App"
+                    width="360"
+                  />
+                  <div class="quarter-content-card">
+                    <h3 class="qurter-page-list-head">Meditation App</h3>
+                    <p class="quarter-page-paragraph">App</p>
+                  </div>
+              </li>
+              <li class="quarter-card">
 
+                  <img
+                    src="./images/Our-Portfolio/4.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                  />
+                  <div class="quarter-content-card">
+                    <h3 class="qurter-page-list-head">Taxi Service</h3>
+                    <p class="quarter-page-paragraph">Marketing</p>
+                  </div>
+              </li>
+              <li class="quarter-card">
 
-.second-page-lists-head{
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color:#2e2f42;
-}
-.paragragh-second-page{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color:#434455;
-}
-.list-head{
-    margin-bottom: 8px;
-}
+                  <img
+                    src="./images/Our-Portfolio/5.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
+                  <div class="quarter-content-card">
+                    <h3 class="qurter-page-list-head">Screen Illustrations</h3>
+                    <p class="quarter-page-paragraph">Design</p>
+                  </div>
+              </li>
+              <li class="quarter-card">
 
-.list-of-plus{
-    width: calc((100% - 72px) / 4);
-}
-.third-page{
-    background-color: #F4F4FD;
-    padding: 120px 0;
-}
-.third-page-card{
-    background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4); 
-    
-}
-.third-page-head{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color:#2e2f42;
-    
-}
-.third-page-head-d{
-    margin-bottom: 72px;
-
-}
-.card-of-employee{
-    display: flex;
-    gap: 24px;
-    margin-right: 24px;
-
-}
-
-.card-of-employee li:last-child{
-    margin-right: 0;
-}
-
-.card{
-    flex-basis: calc((100% - 3 * 24px) / 4);
-    border-radius: 0px 0px 4px 4px;
-
-}
-
-.card-container{
-    padding: 32px 0;
-
-}
-
-.f-l-name-class{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.f-l-name-class-d{
-    text-align: center; 
-    margin-bottom: 8px;
-
-}
-
-.p_project{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color:#434455;
-
-    text-align: center; 
-
-}
-
-.quarter-page{
-    padding: 120px 0 120px 0; 
-}
-
-.quarter-page-head{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color:#2e2f42;
-
-    margin-bottom: 72px;
-}
-
-.quarter-page-content{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px; 
-    margin-right: 24px;
-    row-gap: 48px; 
-}
-
-.quarter-page-content li:last-child{
-    margin-right: 0;
-}
-.quarter-card{
-    width: calc((100% - 48px) / 3); 
-}
-.quarter-content-card{
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none; 
-
-}
-.quarter-page-list-head{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color:#2e2f42;
-    margin-bottom: 8px;
-}
-
-.quarter-page-paragraph{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color:#434455;
-}
-
-.q-p-h{
-    margin-bottom: 72px;
-}
-
-.logo-f{
-    display: inline-block; 
-    margin-bottom: 16px;
-}
-.span-logo-footer{
-    color:#F4F4FD;
-}
-.class-footer{
-    background-color: #2e2f42;
-    padding: 100px 0;
-
-}
-
-.footer-paragraph{
-    line-height: 1.5;
-    color:#F4F4FD;
-    letter-spacing: 0.02em;
-
-    max-width: 264px;
-}
+                  <img
+                    src="./images/Our-Portfolio/6.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
+                  <div class="quarter-content-card">
+                    <h3 class="qurter-page-list-head">Online Courses</h3>
+                    <p class="quarter-page-paragraph">Marketing</p>
+                  </div>
+              </li>
+            </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="class-footer">
+      <div class="container">
+        <a href="./index.html" class="logo logo-f"
+          >Web<span class="span-logo-footer">Studio</span></a
+        >
+        <p class="footer-paragraph">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
